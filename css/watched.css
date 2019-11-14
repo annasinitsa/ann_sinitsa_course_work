@@ -1,0 +1,48 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(14, 14, 14);
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 20pt 0 20pt 0;
+}
+
+* {box-sizing:border-box}
+
+main > .posters-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sort-order-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.sort-order {
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border: 2pt solid white;
+    border-radius: 5pt;
+}
+
+.poster {
+    width: auto;
+}
+
+.posters-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;;
+}
+
+.posters-table > table {
+    width: 100%;
+}

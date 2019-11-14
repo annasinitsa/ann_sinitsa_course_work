@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Serials time</title>
+		<link rel="shortcut icon" href="../img/logo_series.png" type="image/png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="../css/serial_form_style.css" rel="stylesheet" type="text/css">
+		
+		<link href="../css/header.css" rel="stylesheet" type="text/css">
+		<link href="../css/footer.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<img src="../img/logo_series.png" alt="logo" height="40px">
+			</div>
+			<nav class="header-nav">
+				<a href="homepage.html">HOME</a><p>|</p> 
+				<a href="2.html">GENRES</a><p>|</p> 
+				<a href="watched.html">WATCHED</a><p>|</p> 
+				<a href="4.html">NEW</a><p>|</p> 
+				<a href="5.html">MY REVIEWS</a>
+				<div id="search">
+					<input type="text" placeholder="Search...">
+					<button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+				</div>
+			</nav>
+		</header>
+		<main class="content">
+			<h1>Create new serial</h1>
+			<form class="serial-form">
+				<label>
+					<span>Title:</span>
+					<input type="text" name="title">
+				</label>
+				<label>
+					<span>Info:</span>
+					<input type="text" name="info">	
+				</label>
+				<label>
+					<span>Genre:</span>
+					<select name="genre">
+						<option value="Horror">Horror</option>
+						<option value="Comedy">Comedy</option>
+						<option value="Drama">Drama</option>
+					</select>
+				</label>
+				<label>
+					<span>Description:</span>
+					<textarea rows="10" cols="45" name="text-review"></textarea>
+				</label>
+				<label>
+					<span>Trailer:</span>
+					<input type="text" name="trailer-link">
+				</label>
+				<label>
+					<input type="file" name="poster" class="custom-file-input"><br>
+				</label>
+				<button type="submit" class="serial-create-btn">CREATE</button>
+			</form>
+		</main>
+		<footer>
+			<div class="footer-wrapp">
+				<div id="quote">
+					<p>“Give them pleasure. The same pleasure they have when they wake up from a nightmare.”<br><br>― Alfred Hitchcock</p>
+				</div>
+				<nav class="footer-nav">
+					<ul style="list-style-type:none;">
+						<li><a href="homepage.html">HOME</a></li>
+						<li><a href="2.html">GENRES</a></li>
+						<li><a href="watched.html">WATCHED</a></li>
+						<li><a href="4.html">NEW</a></li>
+						<li><a href="5.html">MY REVIEWS</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
+	
+</body>
+</html>

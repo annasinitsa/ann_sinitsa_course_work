@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serials time</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../img/logo_series.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="../css/homepage.css" rel="stylesheet" type="text/css">
+	<link href="../css/header.css" rel="stylesheet" type="text/css">
+	<link href="../css/footer.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<img src="../img/logo_series.png" alt="logo" height="40px">
+			</div>
+			<nav class="header-nav">
+				<a href="homepage.html">HOME</a><p>|</p> 
+				<a href="2.html">GENRES</a><p>|</p> 
+				<a href="watched.html">WATCHED</a><p>|</p> 
+				<a href="4.html">NEW</a><p>|</p> 
+				<a href="5.html">MY REVIEWS</a>
+				<div id="search">
+					<input type="text" placeholder="Search...">
+					<button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+				</div>
+			</nav>
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+				  <span></span>
+				</label>
+			
+				<ul class="menu__box">
+				  	<li><a class="menu__item" href="#">HOME</a></li>
+					<li><a class="menu__item" href="#">GENRES</a></li>
+					<li><a class="menu__item" href="#">WATCHED</a></li>
+					<li><a class="menu__item" href="#">NEW</a></li>
+					<li><a class="menu__item" href="#">MY REVIEWS</a></li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<script type="text/javascript" src="js/quiz.js"></script>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="../img/chernobyl.jpg" alt="some serial" width="100%">
+					<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+				</div>
+				<div class="mySlides fade">
+					<img src="../img/GOT.jpg" alt="some serial" width="100%">
+					<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+				</div>
+				<div class="mySlides fade">
+					<img src="../img/RickAndMorty.png" alt="some serial" width="100%">
+					<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+				</div>
+				<div class="mySlides fade">
+					<img src="../img/Black-mirror-for-web.png" alt="some serial" width="100%">
+					<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<br>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<hr>
+			<section class="genres">
+				<h1>GENRES</h1>
+				<table class="genres-table">
+					<tr>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+					</tr>
+					<tr>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+					</tr>
+					<tr>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+						<td><figure><figcaption>Genre</figcaption></figure></td>
+					</tr>
+				</table>
+			</section>
+			<hr>
+			<section class="sign-up">
+				<h1 align="center">SIGN UP</h1>
+				<div width="50%" align="center">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div>
+						<form>
+							<label for="email"><b>Email</b></label>
+							<input type="text" placeholder="Enter Email" name="email" required>
+							<label for="psw"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="psw" required>
+							<button type="submit" class="signupbtn">Sign Up</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class = 'slider' style="background: #ccc" hight="20%">
+				<h4>BLOG</h4>
+				<table>
+					<td>
+						<aside>
+							<img src="../img/top10blackmirror.jpg" height="150px">
+						</aside>
+						<article class="news">
+							<h3>Top 10 episodes</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</article>
+					</td>
+					<td>
+						<aside>
+							<img src="../img/lucifier.jpg" height="150px">
+						</aside>
+						<article class="news">
+							<h3>New show this winter</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</article>
+					</td>
+				</table>
+			</section>
+		</main>
+		<footer>
+			<div class="footer-wrapp">
+				<div id="quote">
+					<p>“Give them pleasure. The same pleasure they have when they wake up from a nightmare.”<br><br>― Alfred Hitchcock</p>
+				</div>
+				<nav class="footer-nav">
+					<ul style="list-style-type:none;">
+						<li><a href="homepage.html">HOME</a></li>
+						<li><a href="2.html">GENRES</a></li>
+						<li><a href="watched.html">WATCHED</a></li>
+						<li><a href="4.html">NEW</a></li>
+						<li><a href="5.html">MY REVIEWS</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+	</div>
+<script src="../js/slider.js"></script>
+</body>	
+</html>

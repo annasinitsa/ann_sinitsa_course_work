@@ -1,0 +1,82 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(14, 14, 14);
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20pt 0 20pt 0;
+}
+
+.review-form {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.review-form > label, .review-form > div > label {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0 10px 10px;
+}
+
+.review-form > label > span {
+    display: block;
+    width: 100%;
+}
+
+.review-form > div > label > span {
+    width: 100%;
+}
+
+.review-form > label > textarea {
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border-width: 3pt;
+    border-radius: 5pt;
+    border-color: white;
+}
+
+#author-input {
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border: 2pt solid white;
+    border-radius: 5pt;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+ 
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+#rating-input {
+    list-style: circle;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    border: 2pt solid white;
+    border-radius: 5pt;
+}
+
+.review-save-btn {
+    width: 100px;
+    height: 40px;
+    border: 0px;
+    border-radius: 4px;
+    margin: 10px 0 0 10px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.review-save-btn:hover {
+    background-color: white;
+    color: #333
+}

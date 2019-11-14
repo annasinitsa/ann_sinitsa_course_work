@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+footer {
+    background-color: none;
+}
+
+.footer-wrapp {
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    justify-content: center;
+}
+
+#quote {
+    width: 200pt;
+    text-align: right;
+}
+
+.footer-nav {
+    padding: 0 0 20pt 20pt;
+}
