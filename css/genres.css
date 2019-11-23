@@ -1,0 +1,85 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(14, 14, 14);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.aside{
+    background-color: white;
+    color: red;
+    width: 20%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    width: max-content;
+}
+.grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.poster {
+    width: 100%;
+    padding: 3px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.page-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.nav-button {
+    width: 100px;
+    height: 30px;
+    border: 3px white solid;
+    border-radius: 4px;
+    background-color: rgb(14, 14, 14);
+    margin: 10px 70px 0 70px;
+    color: white;
+    cursor: pointer;
+    font-size: initial;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: rgb(14, 14, 14);
+}
+
+.nav-genres {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 20px 0px 20px 0px;
+    list-style-type:none;
+}
+
+.genre-item {
+    text-align: left;
+    font-variant-caps: all-small-caps;
+    font-size: 24px;
+    padding: 15px 40px 15px 40px;
+}
+
+.genre-item:hover {
+    background-color: red;
+    color: white;
+    font-size: 28px;
+    padding: 13px 40px 13px 40px
+}
