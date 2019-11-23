@@ -9,6 +9,17 @@ header {
     padding:2pt 0 2pt 0 ;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
 .logo {
     width: 9%;
     display: flex;
