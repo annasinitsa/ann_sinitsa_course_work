@@ -33,16 +33,14 @@ main > .posters-section {
     border-radius: 5pt;
 }
 
-.poster {
-    width: auto;
-}
-
 .posters-table {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    width: fit-content;
+    grid-auto-flow: dense;
 }
 
-.posters-table > table {
+.poster {
     width: 100%;
+    padding: 2px;
 }
