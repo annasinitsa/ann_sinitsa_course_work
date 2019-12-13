@@ -1,6 +1,5 @@
 <main>
     <script type="text/javascript" src="js/quiz.js"></script>
-    <p>{{test}}</p>
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 			<img src="../img/chernobyl.jpg" alt="some serial" width="100%">
@@ -31,23 +30,23 @@
 		<div class="genres-wrapper">
 	    <h1>GENRES</h1>
 		<div class="genres">
-			<a href="genres.html"><figure>Genre</figure></a>
-			<a href="genres.html"><figure>Genre</figure></a>					
-			<a href="genres.html"><figure>Genre</figure></a>
-			<a href="genres.html"><figure>Genre</figure></a>					
-			<a href="genres.html"><figure>Genre</figure></a>
-			<a href="genres.html"><figure>Genre</figure></a>
-			<a href="genres.html"><figure>Genre</figure></a>
-			<a href="genres.html"><figure>Genre</figure></a>
-			<a href="genres.html"><figure>Genre</figure></a>
-			<a href="genres.html"><figure>Genre</figure></a>
-			<a href="genres.html"><figure>Genre</figure></a>
-		    <a href="genres.html"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
+			<a href="genres.php"><figure>Genre</figure></a>
         </div>
     </div>
 	<section class="sign-up">
 	    <h1>SIGN UP</h1>
-		<div width="50%" align="center">
+		<div width="50%">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			<div>
 				<form>
@@ -55,33 +54,10 @@
 					<input type="text" placeholder="Enter Email" name="email" required>
 					<label for="psw"><b>Password</b></label>
 					<input type="password" placeholder="Enter Password" name="psw" required>
-                       <button type="submit" class="signupbtn">Sign Up</button>
-                   </form>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </form>
 			</div>
 		</div>
 	</section>
-	<section class = 'slider' style="background: #ccc" hight="20%">
-		<h4>BLOG</h4>
-		<table>
-			<td>
-				<aside>
-					<img src="../img/top10blackmirror.jpg" height="150px">
-				</aside>
-				<article class="news">
-					<h3>Top 10 episodes</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</article>
-			</td>
-			<td>
-				<aside>
-					<img src="../img/lucifier.jpg" height="150px">
-				</aside>
-				<article class="news">
-					<h3>New show this winter</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</article>
-			</td>
-		</table>
-    </section>
     <script src="../js/slider.js"></script>
 </main>		
