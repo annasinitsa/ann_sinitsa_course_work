@@ -96,7 +96,8 @@ html {
   grid-template-columns: auto auto auto auto;
   width: auto;
   grid-auto-flow: dense;
-  margin: 0 30% 0 30%;
+  margin: 0 0% 0 0%;
+  justify-content: center;
 }
 
 .genres-wrapper {

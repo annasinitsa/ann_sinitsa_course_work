@@ -1,5 +1,6 @@
 <main>
-    <script type="text/javascript" src="js/quiz.js"></script>
+	<script type="text/javascript" src="js/quiz.js"></script>
+	<h1>AAAAAAAAAAAAAAAAAAAAa</h1>
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 			<img src="../img/chernobyl.jpg" alt="some serial" width="100%">
