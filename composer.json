@@ -1,6 +1,7 @@
 {
     "require": {
         "monolog/monolog": "1.0.*",
-        "mustache/mustache": "~2.5"
+        "mustache/mustache": "~2.5",
+        "silex/silex": "~1.1"
     }
 }
