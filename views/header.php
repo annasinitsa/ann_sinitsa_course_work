@@ -15,7 +15,7 @@
 	<div class="wrapper">
 		<header>
 			<div class="logo">
-				<a href="homepage.php"><img src="../img/logo_series.png" alt="logo" height="40px"></a>
+				<a href="../homepage.php"><img src="../img/logo_series.png" alt="logo" height="40px"></a>
 			</div>
 			<nav class="header-nav">
 				<a href="homepage.php">HOME</a><p>|</p>
