@@ -4,10 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "post-install-cmd": [
-        "php artisan clear-compiled",
-        "chmod -R 777 public/"
-    ],
     "content-hash": "8bea6ff74b398f0735c8723a7a69a173",
     "packages": [
         {

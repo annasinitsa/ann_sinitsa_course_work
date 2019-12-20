@@ -6,12 +6,6 @@ class User
     protected $userData = [];
     private $table = "users";
 
-
-
-    getUser(){
-        
-    }
-
     
 
     
