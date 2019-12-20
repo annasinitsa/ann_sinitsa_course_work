@@ -3,8 +3,14 @@
 class User 
 {
     private $columnList = ['id', 'username', 'pass', 'created_at', 'email', 'status'];
-    protected $_shopData = [];
+    protected $userData = [];
     private $table = "users";
+
+
+
+    getUser(){
+        
+    }
 
     
 
