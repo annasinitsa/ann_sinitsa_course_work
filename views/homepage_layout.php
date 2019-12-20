@@ -5,22 +5,22 @@
 			<p id="main-p">You can list you favorite TV shows in one place. Or you could find what to watch by reading other`s users reviews.</p>
 		</div>
 		<div class="sign-section">
-			<form class="sign">
+			<form class="sign" method="post">
 				<label for="name"><b>Name</b></label>
-				<input type="text" placeholder="Enter Your Name" name="username" required>
+				<input type="text" name="username" required>
 				<label for="email"><b>Email</b></label>
-				<input type="email" placeholder="Enter Email" name="email" required>
-				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
+				<input type="email" name="email" required>
+				<label for="password"><b>Password</b></label>
+				<input type="password" name="pass" required>
                 <button type="submit" class="signupbtn">Sign Up</button>
             </form>
 			<h3>OR</h3>
-			<form class="sign">
+			<form class="sign" method="post">
 				<label for="email"><b>Email</b></label>
-				<input type="email" placeholder="Enter Email" name="email" required>
-				<label for="psw"><b>Password</b></label>
-				<input type="password" placeholder="Enter Password" name="psw" required>
-                <button type="submit" class="signupbtn">Sign In</button>
+				<input type="email" name="email" required>
+				<label for="password"><b>Password</b></label>
+				<input type="password" name="pass" required>
+                <button type="submit" class="signinbtn" >Sign In</button>
             </form>
 		</div>
 	</div>

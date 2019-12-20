@@ -3,6 +3,12 @@
 //class to communicate with db
 class MyDB
 {
+    public $numResults;
+    private $cn_state;
+    private $conn;
+    private $result = array();
+    private static $instance;
+
     public static function getInstance()
     {
         if (null === self::$instance) {
@@ -180,7 +186,6 @@ class MyDB
     private function connect()
     {
         $this->conn = new mysqli($this->db_host, $this->db_user, $this->db_pass, $this->db_name);
-        mysqli_set_charset($this->conn, "utf8");
         if ($this->conn->connect_error) {
             $this->cn_state = false;
             die("Connection failed: " . $this->conn->connect_error);
@@ -192,7 +197,6 @@ class MyDB
 
     protected function __construct()
     {
-        $st = Settings::getInstance();
         $this->db_host = "77.47.192.87:33321";
         $this->db_user = "ka7514";
         $this->db_pass = "123456";
