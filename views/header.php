@@ -15,13 +15,13 @@
 	<div class="wrapper">
 		<header>
 			<div class="logo">
-				<a href="../homepage.php"><img src="../img/logo_series.png" alt="logo" height="40px"></a>
+				<a href="../index.php"><img src="../img/logo_series.png" alt="logo" height="40px"></a>
 			</div>
 			<nav class="header-nav">
-				<a href="homepage.php">HOME</a><p>|</p>
-				<a href="genres.php">GENRES</a><p>|</p>
-				<a href="watched.php">WATCHED</a><p>|</p>
-				<a href="reviews.php">MY REVIEWS</a>
+				<a href="../index.php">HOME</a><p>|</p>
+				<a href="../genres.php">GENRES</a><p>|</p>
+				<a href="../watched.php">WATCHED</a><p>|</p>
+				<a href="../reviews.php">MY REVIEWS</a>
 				<div id="search">
 					<input type="text" placeholder="Search...">
 					<button type="submit" class="search-button"><i class="fa fa-search"></i></button>

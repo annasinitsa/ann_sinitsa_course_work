@@ -5,10 +5,10 @@
 		</div>
 		<nav class="footer-nav">
     		<ul style="list-style-type:none;">
-				<li><a href="homepage.php">HOME</a></li>
-				<li><a href="genres.php">GENRES</a></li>
-				<li><a href="watched.php">WATCHED</a></li>
-				<li><a href="reviews.php">MY REVIEWS</a></li>
+				<li><a href="../index.php">HOME</a></li>
+				<li><a href="../genres.php">GENRES</a></li>
+				<li><a href="../watched.php">WATCHED</a></li>
+				<li><a href="../reviews.php">MY REVIEWS</a></li>
 			</ul>
 		</nav>
 	</div>
