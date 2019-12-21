@@ -6,3 +6,38 @@ html {
 }
 
 * {box-sizing:border-box}
+
+.main-wrapp {
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+.about-serial {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.info {
+    padding-left: 4vw;
+}
+
+.info > p {
+    padding-bottom: 5px;
+}
+
+.add-btn {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    margin: 20px 0 20px ;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: white;
+    color: #333
+}
