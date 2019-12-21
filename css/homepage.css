@@ -7,18 +7,6 @@ html {
 
 * {box-sizing:border-box}
 
-.hello-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 100pt 0  100pt 0;
-  height: max-content;
-  background-image: url(../img/main_back.gif);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
 #main-text {
   padding-right: 5%;
   display: flex;
@@ -35,46 +23,39 @@ html {
   max-width: 200pt;
 }
 
-.sign > input[type=text],input[type=email],input[type=password]{
-  background-color: black;
-  color: white;  
-  border: 2pt solid white;
-  border-radius: 5pt;
-  width: 200px;
+.hello-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 170pt 0 0 0;
+  height: 100vh;
+  background-image: url(../img/main_back.gif);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .sign {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  align-content: center;
 }
 
-
-.sign > button {
-  max-width: 200px;
+.signbtn {
+  width: 200px;
   height: 30px;
-  border: 0px;
+  border: 0;
   border-radius: 5px;
   background-color: red;
   color: white;
   cursor: pointer;
-  margin: 10px 0 10px 0;
+  font-size: large;
+  margin: 10px;
 }
-.sign > button:hover{
+
+.signbtn:hover {
   background-color: white;
   color: #333
-}
-
-
-.sign-section {
-  width: 30%;
-  background-color: rgba(255, 0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  border: white solid 2pt;
-  border-radius: 5px;
-  padding: 20px;
 }
 
 .slideshow-container {

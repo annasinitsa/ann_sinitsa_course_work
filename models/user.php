@@ -32,6 +32,16 @@ class User
 
     }
 
+    public function saveUser($userId){
+        $this->db->query("UPDATE ".$this->table." SET username=".$this->getData('username').",
+                                                            pass=".$this->getData('pass').",
+                                                            email=".$this->getData('email').",
+                                                            status=".$this->getData('status').",
+                                                            active=".$this->getData('active')."
+        WHERE id = ".$userId);
+
+    }
+
     public function setData($key, $value)
     {
         $this->userData[$key] = $value;

@@ -1,29 +1,16 @@
 <main>
-	<div class="hello-section">
-		<div id="main-text">
-			<h1 id="main-h">CREATE YOUR LISTS OF TV SHOWS</h1>
-			<p id="main-p">You can list you favorite TV shows in one place. Or you could find what to watch by reading other`s users reviews.</p>
-		</div>
-		<div class="sign-section">
-			<form class="sign" method="post">
-				<label for="name"><b>Name</b></label>
-				<input type="text" name="username" required>
-				<label for="email"><b>Email</b></label>
-				<input type="email" name="email" required>
-				<label for="password"><b>Password</b></label>
-				<input type="password" name="pass" required>
-                <button type="submit" class="signupbtn">Sign Up</button>
-            </form>
-			<h3>OR</h3>
-			<form class="sign" method="post">
-				<label for="email"><b>Email</b></label>
-				<input type="email" name="email" required>
-				<label for="password"><b>Password</b></label>
-				<input type="password" name="pass" required>
-                <button type="submit" class="signinbtn" >Sign In</button>
-            </form>
-		</div>
-	</div>
+    <div class="hello-section">
+        <div id="main-text">
+            <h1 id="main-h">CREATE YOUR LISTS OF TV SHOWS</h1>
+            <p id="main-p">You can list you favorite TV shows in one place. Or you could find what to watch by reading other`s users reviews.</p>
+        </div>
+        <div class="sign">
+            <a href="../controllers/sign_up.php"><button class="signbtn">SIGN UP</button></a>
+            <h3 align="center">OR</h3>
+            <a href="../controllers/sign_up.php"><button class="signbtn">SIGN IN</button></a>
+        </div>
+    </div>
+
 	<script type="text/javascript" src="js/quiz.js"></script>
 	<div class="slideshow-container">
 		<div class="mySlides fade">
