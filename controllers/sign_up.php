@@ -17,6 +17,7 @@ if($_GET['type'] == 'signup'){
         $email      = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
         $query = "INSERT INTO users (username,pass,email) VALUES ('".$username."','".$pass."','".$email."')";
         $res = $db->query($query);
+        error_log($res);
         if($res){
             $msg = "Success!";
         }else{
@@ -34,7 +35,8 @@ if($_GET['type'] == 'signin'){
         $res    = $db->getResult();
         if(($db->numResults == 1) && ($_POST['pass'] == $res['pass'])){
             $msg = "Welcome, ".$res['username'];
-            $db->query("UPDATE users SET active = 1 WHERE id = '".$res['id']."'");
+            $res = $db->query("UPDATE users SET active = 1 WHERE id = '".$res['id']."'");
+            error_log($res);
         }
         elseif(($_POST['pass'] != $res['pass'])) {
             $msg = "Wrong password";

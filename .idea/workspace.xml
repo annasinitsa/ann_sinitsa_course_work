@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3babcc8f-f545-4ae5-918d-52edef1e0cdd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mydb.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/mydb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_review.php" beforeDir="false" afterPath="$PROJECT_DIR$/create_review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genres.php" beforeDir="false" afterPath="$PROJECT_DIR$/genres.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serial.php" beforeDir="false" afterPath="$PROJECT_DIR$/serial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/create_review_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/create_review_form.php" afterDir="false" />
-    </list>
+    <list default="true" id="3babcc8f-f545-4ae5-918d-52edef1e0cdd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mydb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="202" column="34" lean-forward="true" selection-start-line="202" selection-start-column="34" selection-end-line="202" selection-end-column="34" />
+            <state relative-caret-position="380">
+              <caret line="194" column="9" lean-forward="true" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -255,12 +248,12 @@
       <workItem from="1576933319356" duration="769000" />
       <workItem from="1576936817058" duration="4960000" />
       <workItem from="1576965892961" duration="3231000" />
-      <workItem from="1577008278845" duration="18497000" />
+      <workItem from="1577008278845" duration="19204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35584000" />
+    <option name="totallyTimeSpent" value="36291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -443,8 +436,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mydb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="202" column="34" lean-forward="true" selection-start-line="202" selection-start-column="34" selection-end-line="202" selection-end-column="34" />
+        <state relative-caret-position="380">
+          <caret line="194" column="9" lean-forward="true" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
         </state>
       </provider>
     </entry>
