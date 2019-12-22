@@ -198,8 +198,8 @@ class MyDB
     protected function __construct()
     {
         $this->db_host = "77.47.192.87:33321";
-        $this->db_user = "annya";
-        $this->db_pass = "123";
+        $this->db_user = "ka7514";
+        $this->db_pass = "123456";
         $this->db_name = "ka7514";
 
         $this->connect();
