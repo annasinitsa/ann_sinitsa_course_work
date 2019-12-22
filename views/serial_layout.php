@@ -25,7 +25,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/QMH4zyQ22Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <section>
-        <a href="../create_review.php"><button class="add-btn"><strong>ADD REVIEW</strong></button></a>
+        <a href="../create_review.php?title={{title}}"><button class="add-btn"><strong>ADD REVIEW</strong></button></a>
         <h2>Reviews</h2>
         <hr>
         <div>

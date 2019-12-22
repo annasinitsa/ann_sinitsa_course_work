@@ -32,7 +32,8 @@ html {
 }
 
 .poster {
-    width: 100%;
+    max-width: 15vw;
+    min-width: 5vw;
     padding: 3px;
     border: 2px solid white;
     border-radius: 5px;
@@ -75,6 +76,7 @@ html {
     font-variant-caps: all-small-caps;
     font-size: 24px;
     padding: 15px 40px 15px 40px;
+    color: red;
 }
 
 .genre-item:hover {
@@ -82,4 +84,10 @@ html {
     color: white;
     font-size: 28px;
     padding: 13px 40px 13px 40px
+}
+#genre-title {
+    color: red;
+}
+#genre-title:hover {
+    color: white;
 }

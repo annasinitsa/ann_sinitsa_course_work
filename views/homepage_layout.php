@@ -5,9 +5,9 @@
             <p id="main-p">You can list you favorite TV shows in one place. Or you could find what to watch by reading other`s users reviews.</p>
         </div>
         <div class="sign">
-            <a href="../controllers/sign_up.php"><button class="signbtn">SIGN UP</button></a>
+            <a href="../controllers/sign_up.php?type=signup"><button class="signbtn">SIGN UP</button></a>
             <h3 align="center">OR</h3>
-            <a href="../controllers/sign_up.php"><button class="signbtn">SIGN IN</button></a>
+            <a href="../controllers/sign_up.php?type=signin"><button class="signbtn">SIGN IN</button></a>
         </div>
     </div>
 
@@ -38,18 +38,9 @@
 		<div class="genres-wrapper">
 	    <h1>GENRES</h1>
 		<div class="genres">
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
-			<a href="genres.php"><figure>Genre</figure></a>
+            {{#genres_list}}
+			<a href="../genres.php?genre={{genre}}"><figure>{{genre}}</figure></a>
+			{{/genres_list}}
         </div>
     </div>
     <script src="../js/slider.js"></script>

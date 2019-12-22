@@ -142,10 +142,10 @@ html {
 
 .genres {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   width: auto;
   grid-auto-flow: dense;
-  margin: 0% 0% 0% 0%;
+  margin: 0;
   justify-content: center;
 }
 
