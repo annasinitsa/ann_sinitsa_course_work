@@ -1,13 +1,24 @@
 <?php
 require 'vendor/mustache/mustache/src/Mustache/Autoloader.php';
+require 'app/mydb.php';
+
 Mustache_Autoloader::register();
 
 $mustache = new Mustache_Engine([
     'loader' => new Mustache_Loader_FilesystemLoader(__DIR__ . '/views', ['extension' => '.php']),
 ]);
 
+if(isset($_GET['title'])){
+    $db = MyDB::getInstance();
+    $title = filter_var($_GET['title'],FILTER_SANITIZE_STRING);
+    $db->select('serials','*'," title = '".$title."'");
+    $data = $db->getResult();
+}
+
+
+
 echo $mustache->render('header',['page_name' => 'serialpage']);
 
-echo $mustache->render('serial_layout',['poster' => 'https://vignette.wikia.nocookie.net/star-and-the-forces-of-evil/images/c/ca/SVTFOE_season_3_poster.png/revision/latest/scale-to-width-down/340?cb=20180112163051', 'title' => 'Star vs. Forces of Evil']);
+echo $mustache->render('serial_layout', $data);
 
 echo $mustache->render('footer',['test' => 'hellp']);

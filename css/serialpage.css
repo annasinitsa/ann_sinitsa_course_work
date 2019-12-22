@@ -41,3 +41,11 @@ html {
     background-color: white;
     color: #333
 }
+
+.poster {
+    max-width: 20vw;
+    min-width: 5vw;
+    padding: 3px;
+    border: 2px solid white;
+    border-radius: 5px;
+}

@@ -4,7 +4,7 @@
         <h2>{{title}}</h2>
         <div class="about-serial">
             <div>
-                <img src="{{poster}}" alt="{{title}}">
+                <img src="{{poster}}" alt="{{title}}" class="poster">
             </div>
             <div class="info">
                 <p><strong>Release date: </strong>{{release_date}}</p>
@@ -22,7 +22,7 @@
     </section>
     <div class="trailer">
         <h2>Watch trailer</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QMH4zyQ22Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="{{trailer_link}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <section>
         <a href="../create_review.php?title={{title}}"><button class="add-btn"><strong>ADD REVIEW</strong></button></a>
