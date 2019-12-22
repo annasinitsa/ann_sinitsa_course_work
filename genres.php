@@ -15,7 +15,7 @@ if(isset($_GET['genre'])){
 
 $db = MyDB::getInstance();
 
-$db->select('serials','title,poster,rating'," genre LIKE '%".$genre."%'");
+$db->select('serials','title,poster,rating'," genre LIKE '%".$genre."%'",'',' title ASC');
 
 $data = $db->getResult();
 

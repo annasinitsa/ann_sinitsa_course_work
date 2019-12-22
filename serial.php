@@ -1,7 +1,6 @@
 <?php
 require 'vendor/mustache/mustache/src/Mustache/Autoloader.php';
 require 'app/mydb.php';
-
 Mustache_Autoloader::register();
 
 $mustache = new Mustache_Engine([
