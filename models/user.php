@@ -4,6 +4,7 @@ class User
 {
     private $columnList = ['id', 'username', 'pass', 'email', 'status', 'active'];
     protected $userData = [];
+    private $userId;
     private static $instance;
     private $table = "users";
     private $db;
@@ -15,6 +16,13 @@ class User
         }
 
         return self::$instance;
+    }
+
+    public function setId($email){
+        $this->db->select('users','id',' email = '.$email);
+        $res = $this->db->getResult();
+        $this->userId = $res['id'];
+        return $this->userId;
     }
 
     public function getData($key = false)
@@ -32,13 +40,13 @@ class User
 
     }
 
-    public function saveUser($userId){
+    public function saveUser(){
         $this->db->query("UPDATE ".$this->table." SET username=".$this->getData('username').",
                                                             pass=".$this->getData('pass').",
                                                             email=".$this->getData('email').",
                                                             status=".$this->getData('status').",
                                                             active=".$this->getData('active')."
-        WHERE id = ".$userId);
+        WHERE id = ".$this->userId);
 
     }
 
@@ -49,26 +57,29 @@ class User
         return $this;
     }
 
-    public function retrieveUserData($userId)
+    public function retrieveUserData()
     {
         $db      = MyDB::getInstance();
 
-        if ($db->select("users", "*", "id='".(string)$userId."'") == true) {
+        if(isset($this->userId)){
+            if ($db->select("users", "*", "id='".(string)$this->userId."'") == true) {
 
-            if ($db->numResults == 1) {
-                $sel                  = $db->getResult();
-                $userData['id']       = $sel['id'];
-                $userData['username'] = $sel['username'];
-                $userData['pass']     = $sel['pass'];
-                $userData['email']    = $sel['email'];
-                $userData['status']   = $sel['status'];
-                $userData['active']   = $sel['active'];
+                if ($db->numResults == 1) {
+                    $sel                  = $db->getResult();
+                    $userData['id']       = $sel['id'];
+                    $userData['username'] = $sel['username'];
+                    $userData['pass']     = $sel['pass'];
+                    $userData['email']    = $sel['email'];
+                    $userData['status']   = $sel['status'];
+                    $userData['active']   = $sel['active'];
 
-                return $userData;
-            } else {
-                error_log("User details not found!");
+                    return $userData;
+                } else {
+                    error_log("User details not found!");
+                }
             }
         }
+
         return false;
     }
 

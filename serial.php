@@ -11,13 +11,16 @@ if(isset($_GET['title'])){
     $db = MyDB::getInstance();
     $title = filter_var($_GET['title'],FILTER_SANITIZE_STRING);
     $db->select('serials','*'," title = '".$title."'");
-    $data = $db->getResult();
+    $serial = $db->getResult();
+    $db->select('reviews','*'," serial_title ='".$title."'");
+    $review = $db->getResult();
+    $serial['review'] = $review;
 }
 
 
 
 echo $mustache->render('header',['page_name' => 'serialpage']);
 
-echo $mustache->render('serial_layout', $data);
+echo $mustache->render('serial_layout', $serial);
 
 echo $mustache->render('footer',['test' => 'hellp']);
