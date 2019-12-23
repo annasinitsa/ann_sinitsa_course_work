@@ -13,7 +13,7 @@ if($_GET['type'] == 'signup'){
     if(isset($_POST['username']) && isset($_POST['pass'])){
         $db = MyDB::getInstance();
         $username   = filter_var($_POST['username'],FILTER_SANITIZE_STRING);
-        $pass       = password_hash($_POST['pass'],PASSWORD_DEFAULT);
+        $pass       = $_POST['pass'];
         $email      = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
         $query = "INSERT INTO users (username,pass,email) VALUES ('".$username."','".$pass."','".$email."')";
         $res = $db->query($query);
@@ -29,7 +29,7 @@ if($_GET['type'] == 'signup'){
 if($_GET['type'] == 'signin'){
     if(isset($_POST['email']) && isset($_POST['pass'])){
         $db = MyDB::getInstance();
-        $pass   = password_hash($_POST['pass'],PASSWORD_DEFAULT);
+        $pass   = $_POST['pass'];
         $email  = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
         $db->select('users','*',"email = '".$email."'");
         $res    = $db->getResult();
