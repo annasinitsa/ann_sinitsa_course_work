@@ -29,7 +29,7 @@
     </div>
     <section>
         <a href="../create_review.php?title={{title}}"><button class="add-btn"><strong>ADD REVIEW</strong></button></a>
-        {{#review}}<h2>Reviews</h2>{{/review}}
+        <h2>Reviews</h2>
         <hr>
         {{#review}}
         <div>
