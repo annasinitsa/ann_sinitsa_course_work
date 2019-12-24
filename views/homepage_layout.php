@@ -6,13 +6,9 @@
         </div>
 
         <div class="sign">
-            {{#sign_up}}
             <a href="../controllers/sign_up.php?type=signup"><button class="signbtn">SIGN UP</button></a>
             <h3 align="center">OR</h3>
-            {{/sign_up}}
-            {{#sign_in}}
             <a href="../controllers/sign_up.php?type=signin"><button class="signbtn">SIGN IN</button></a>
-            {{/sign_in}}
         </div>
     </div>
 

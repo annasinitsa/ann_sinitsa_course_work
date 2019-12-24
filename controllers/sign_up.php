@@ -45,6 +45,7 @@ if($_GET['type'] == 'signin'){
                 $us->setData('email',$res['email']);
                 $us->setData('active', 1);
                 $_SESSION['status'] = 'signed_in';
+                $_SESSION['user_id'] = $res['id'];
             }else{
                 $msg = "Oops, something goes wrong... Try again";
             }

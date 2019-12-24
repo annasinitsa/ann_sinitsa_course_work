@@ -5,6 +5,9 @@
         <div class="about-serial">
             <div>
                 <img src="{{poster}}" alt="{{title}}" class="poster">
+                <a href="../watched.php?title={{title}}&list_type=watched"><button class="add-btn"><strong>WATCHED</strong></button></a>
+                <a href="../watched.php?title={{title}}&list_type=favorite"><button class="add-btn"><strong>FAVORITE</strong></button></a>
+                <a href="../watched.php?title={{title}}&list_type=to_watch"><button class="add-btn"><strong>TO WATCH</strong></button></a>
             </div>
             <div class="info">
                 <p><strong>Release date: </strong>{{release_date}}</p>
@@ -26,7 +29,7 @@
     </div>
     <section>
         <a href="../create_review.php?title={{title}}"><button class="add-btn"><strong>ADD REVIEW</strong></button></a>
-        <h2>Reviews</h2>
+        {{#review}}<h2>Reviews</h2>{{/review}}
         <hr>
         {{#review}}
         <div>
